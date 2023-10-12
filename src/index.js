@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Cart from './components/Cart';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
+root.render( <React.StrictMode>
+  <BrowserRouter>
+  <Routes>
+  <Route exact path="/" element={  <App />} />
+  <Route exact path="/cart" element={  <Cart />} />
+
+  </Routes>
+  </BrowserRouter>
   </React.StrictMode>
 );
 
