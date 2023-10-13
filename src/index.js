@@ -15,7 +15,7 @@ root.render( <React.StrictMode>
   <Routes>
   <Route exact path="/" element={  <App />} />
   <Route exact path="/cart" element={  <Cart />} />
-  <Route exact path="/productDetail" element={  <ProductDetail />} />
+  <Route exact path="/:id" element={  <ProductDetail />} />
   </Routes>
   </BrowserRouter>
   </Provider>
